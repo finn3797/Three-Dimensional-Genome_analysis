@@ -1,0 +1,3 @@
+sample="E70_1"
+sort -k2,2d -k6,6d /data/gouyuwei/data_for_juicer/E70_1_juicer_shortFormat.txt > /data/gouyuwei/data_for_juicer/E70_1_juicer_shortFormat.sort.txt
+java  -Xmx45g -jar /data/gouyuwei/software/juicer_tools/juicer_tools.1.8.9_jcuda.0.8.jar pre -r 5000,10000,20000,40000,100000,500000 /data/gouyuwei/data_for_juicer/data_for_juicer/E70_1_juicer_shortFormat.sort.txt ../E70_1.hic /data/gouyuwei/GENOME/chrom_sus11.sizes
